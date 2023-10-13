@@ -29,7 +29,8 @@ class GordenController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Gorden::create($request->except(['_token']));
+        return redirect('/admin/gorden');
     }
 
     /**

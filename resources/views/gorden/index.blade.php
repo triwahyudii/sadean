@@ -30,9 +30,10 @@
                         <tbody>
                             @foreach($data as $item)
                             <tr>
-                                <td class="fw-bold"></td>
-                                <td></td>
-                                <td>Rp {{ number_format($item['jumlah'], 0, ',', '.') }}</td>
+                                <td class="fw-bold">{{ $item['name'] }}</td>
+                                <td>Rp {{ number_format($item['price'], 0, ',', '.') }}</td>
+                                <td>{{ $item['desc'] }}</td>
+                                <td>{{ $item['image'] }}</td>
                                 <td></td>
                                 <td>
                                     <a href="{{ url('/admin/gorden/' . $item['id']) }}" class="btn btn-info btn-sm"><i class="fa-regular fa-eye"></i> View </a>
