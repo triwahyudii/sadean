@@ -1,7 +1,28 @@
-@extends('layouts.app')
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-@section('content')
-<div id="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Multilink') }}</title>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('/assets/css/main/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/main/app-dark.css') }}">
+
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+</head>
+
+<body>
+    <div id="app">
         <div id="sidebar" class="active">
             <div class="sidebar-wrapper active">
                 <div class="sidebar-header position-relative">
@@ -49,23 +70,23 @@
                         <!-- TRANSFER -->
                         <li class="sidebar-item">
                             <a href="{{ url('/admin/rumah') }}" class='sidebar-link'>
-                                <i class="fa-solid fa-money-bill-transfer fs-4"></i>
+                                <i class="fa-solid fa-house-user fs-4"></i>
                                 <span>Design Rumah</span>
                             </a>
                         </li>
 
                         <!-- TARIK TUNAI -->
                         <li class="sidebar-item">
-                            <a href="{{ url('/admin/alat-pesta') }}" class='sidebar-link'>
-                                <i class="fa-solid fa-money-bills fs-4"></i>
-                                <span>Sewa Alat Pesta</span>
+                            <a href="{{ url('/admin/wo') }}" class='sidebar-link'>
+                                <i class="fa-solid fa-champagne-glasses fs-4"></i>
+                                <span>Wedding</span>
                             </a>
                         </li>
 
                         <!-- SETOR TUNAI -->
                         <li class="sidebar-item">
                             <a href="{{ url('/admin/gorden') }}" class='sidebar-link'>
-                                <i class="fa-solid fa-money-bill-trend-up fs-4"></i>
+                                <i class="fa-brands fa-intercom fs-4"></i>
                                 <span>Gorden</span>
                             </a>
                         </li>
@@ -91,4 +112,6 @@
 
     <script src="https://kit.fontawesome.com/39d2ff4747.js" crossorigin="anonymous"></script>
     <script src="{{ asset('/assets/js/app.js') }}"></script>
-@endsection
+</body>
+
+</html>

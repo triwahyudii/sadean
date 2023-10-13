@@ -13,6 +13,10 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <!-- Admin Panel -->
+    <link rel="stylesheet" href="{{ asset('/assets/css/main/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/main/app-dark.css') }}">
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>

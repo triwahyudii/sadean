@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('gordens', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->text('desc');
+            $table->string('price');
+            $table->string('image');
             $table->timestamps();
         });
     }

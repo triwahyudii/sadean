@@ -11,6 +11,7 @@ class Gorden extends Model
     protected $fillable = [
         'name', 
         'desc',
+        'price',
         'image',
     ];
 }

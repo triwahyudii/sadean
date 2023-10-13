@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gorden;
 use Illuminate\Http\Request;
 
 class GordenController extends Controller
@@ -11,7 +12,8 @@ class GordenController extends Controller
      */
     public function index()
     {
-        //
+        $data = Gorden::all();
+        return view('gorden.index', compact(['data']));
     }
 
     /**
@@ -19,7 +21,7 @@ class GordenController extends Controller
      */
     public function create()
     {
-        //
+        return view('gorden.create');
     }
 
     /**
