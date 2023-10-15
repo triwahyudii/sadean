@@ -29,8 +29,20 @@ class GordenController extends Controller
      */
     public function store(Request $request)
     {
-        Gorden::create($request->except(['_token']));
-        return redirect('/admin/gorden');
+        $data = $request->validate([
+            'title' => 'required',
+            'price' => 'required',
+            'desc' => 'required',
+            'image' => 'required|file|image|mimes:png,jpg,jpeg,svg|max:5048'
+        ]);
+
+        $file = $request->file('image');
+        $fileName = uniqid().  '.' . $file->getClientOriginalExtension();
+        $file->storeAs('public/', $fileName);
+        $data['image'] = $fileName;
+        
+        Gorden::create($data);
+        return redirect('/admin/gorden')->with('success', 'Data berhasil ditambahkan!');
     }
 
     /**
@@ -63,5 +75,11 @@ class GordenController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function listGorden() 
+    {
+        $data = Gorden::all();
+        return view('gorden.listGorden', compact(['data']));
     }
 }

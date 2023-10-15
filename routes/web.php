@@ -22,7 +22,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//ADMIN
 Route::get('/admin/gorden', [GordenController::class, 'index']);
 Route::get('/admin/gorden/create', [GordenController::class, 'create']);
 Route::post('/admin/gorden/store', [GordenController::class, 'store']);
 
+//USER
+Route::get('gorden', [GordenController::class, 'listGorden']);
