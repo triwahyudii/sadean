@@ -13,7 +13,7 @@
             <p>{{ $data['desc'] }}</p>
         </div>
         <div class="text-center">
-            <h5>Konsultasi secara <span class="text-danger">GRATIS</span></h5>
+            <h5>Konsultasi secara <span class="text-danger fw-bold">GRATIS !!</span></h5>
             <a href="https://wa.me/6285732003433?text=Saya%20ingin%20konsultasi%20dengan%20Sadean.com" class="btn btn-primary">GRATIS Konsultasi</a>
         </div>
     </div>

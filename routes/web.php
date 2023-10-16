@@ -30,3 +30,4 @@ Route::post('/admin/gorden/store', [GordenController::class, 'store']);
 //USER
 Route::get('gorden', [GordenController::class, 'listGorden']);
 Route::get('gorden/{id}', [GordenController::class, 'details']);
+Route::get('gallery/gorden', [GordenController::class, 'gallery']);

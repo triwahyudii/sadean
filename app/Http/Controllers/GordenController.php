@@ -88,4 +88,10 @@ class GordenController extends Controller
         $data = Gorden::find($id);
         return view('gorden.details', compact(['data']));
     } 
+
+    public function gallery()
+    {
+        $data = Gorden::all();
+        return view('gorden.gallery', compact(['data']));
+    }
 }

@@ -17,25 +17,39 @@
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg bg-info">
-            <div class="container-fluid mt-3 mb-2">
-                <a class="navbar-brand fw-bold" href="#">Sadean</a>
+        <nav class="navbar navbar-expand-lg bg-warning bg-gradient bg-opacity-75">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{{url('/')}}">
+                    <img src="{{ asset('/img/logo/SADEAN.png') }}" alt="Sadean" width="70" height="70">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('rumah')}}">BANGUN RUMAH</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('eo')}}">WEDDING ORGANIZER</a>
+                            <a class="nav-link" href="{{url('wo')}}">WEDDING ORGANIZER</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('gorden')}}">GORDEN</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                GALLERY
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-center" href="{{ url('gallery/rumah') }}">Bangun Rumah</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-center" href="{{ url('gallery/wo') }}">Wedding Organizer</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-center" href="{{ url('gallery/gorden') }}">Gorden</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -141,7 +155,7 @@
 
     <!-- Floating Buttons Whatsapp -->
     <div id="whatsapp">
-        <a href="https://wa.me/6285732003433?text=Saya%20ingin%20konsultasi%20dengan%20Sadean.com"  id="toggle1" class="wtsapp">
+        <a href="https://wa.me/6285732003433?text=Saya%20ingin%20konsultasi%20dengan%20Sadean.com" id="toggle1" class="wtsapp">
             <i class="fa fa-whatsapp"></i>
         </a>
     </div>
