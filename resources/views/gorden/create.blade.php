@@ -27,7 +27,7 @@
                             </div>
                             <div class="pt-1">
                                 <label for="formFileMultiple" class="form-label">Images</label>
-                                <input class="form-control" type="file" name="image" id="formFileMultiple" multiple>
+                                <input class="form-control" type="file" name="images" id="formFileMultiple" multiple>
                             </div>
                             <div class="d-flex pt-3">
                                 <a href="{{ url('/admin/gorden/') }}" class="btn btn-secondary btn-sm justify-content-start me-2"><i class="fa-solid fa-arrow-left"></i> Back</a>

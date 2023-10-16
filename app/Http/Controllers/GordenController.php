@@ -33,13 +33,13 @@ class GordenController extends Controller
             'title' => 'required',
             'price' => 'required',
             'desc' => 'required',
-            'image' => 'required|file|image|mimes:png,jpg,jpeg,svg|max:5048'
+            'images' => 'required|file|image|mimes:png,jpg,jpeg,svg|max:5048'
         ]);
 
-        $file = $request->file('image');
+        $file = $request->file('images');
         $fileName = uniqid().  '.' . $file->getClientOriginalExtension();
         $file->storeAs('public/', $fileName);
-        $data['image'] = $fileName;
+        $data['images'] = $fileName;
         
         Gorden::create($data);
         return redirect('/admin/gorden')->with('success', 'Data berhasil ditambahkan!');
@@ -80,6 +80,12 @@ class GordenController extends Controller
     public function listGorden() 
     {
         $data = Gorden::all();
-        return view('gorden.listGorden', compact(['data']));
+        return view('gorden.list-gorden', compact(['data']));
     }
+
+    public function details(string $id)
+    {
+        $data = Gorden::find($id);
+        return view('gorden.details', compact(['data']));
+    } 
 }

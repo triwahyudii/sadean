@@ -7,12 +7,12 @@
         <div class="col">
             <div class="card border-0">
                 <div style="max-height: 250px; overflow: hidden;">
-                    <img src="{{ asset('storage/' . $item['image']) }}" class="card-img-top img-fluid" alt="...">
+                    <img src="{{ asset('storage/' . $item['images']) }}" class="card-img-top img-fluid" alt="...">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title text-center">{{$item['title']}}</h5>
                     <div class="col text-center d-grid gap-2 col-6 mx-auto">
-                        <a href="#" class="btn btn-warning justify-content-center">Lihat</a>
+                        <a href="{{ url('gorden/' . $item['id']) }}" class="btn btn-warning justify-content-center">Rincian</a>
                     </div>
                 </div>
             </div>

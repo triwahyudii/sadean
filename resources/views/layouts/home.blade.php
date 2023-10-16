@@ -141,7 +141,7 @@
 
     <!-- Floating Buttons Whatsapp -->
     <div id="whatsapp">
-        <a href="https://wa.me/6285732003433?text=Saya%20ingin%20pesan%20website"  id="toggle1" class="wtsapp">
+        <a href="https://wa.me/6285732003433?text=Saya%20ingin%20konsultasi%20dengan%20Sadean.com"  id="toggle1" class="wtsapp">
             <i class="fa fa-whatsapp"></i>
         </a>
     </div>
