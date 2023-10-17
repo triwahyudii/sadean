@@ -117,19 +117,28 @@
         <section>
             <div class="container pt-5 pb-5">
                 <h1 class="text-center mb-0">Mereka Percaya Kepada Kami</h1>
-                <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="hover">
+                <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade text-center" data-bs-ride="carousel" data-bs-pause="hover">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="{{asset('/img/1.png')}}" class="d-block w-100 " alt="...">
+                            <img src="{{asset('/img/testi/1.png')}}" class="d-block" width="300" height="300"   alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('/img/2.png')}}" class="d-block w-100  " alt="...">
+                            <img src="{{asset('/img/testi/2.png')}}" class="d-block" width="300" height="300"  alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('/img/3.png')}}" class="d-block w-100  " alt="...">
+                            <img src="{{asset('/img/testi/3.png')}}" class="d-block" width="300" height="300"  alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('/img/11.png')}}" class="d-block w-100  " alt="...">
+                            <img src="{{asset('/img/testi/4.png')}}" class="d-block" width="300" height="300"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{asset('/img/testi/5.png')}}" class="d-block" width="300" height="300"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{asset('/img/testi/6.png')}}" class="d-block" width="300" height="300"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{asset('/img/testi/7.png')}}" class="d-block" width="300" height="300"  alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

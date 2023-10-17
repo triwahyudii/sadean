@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a>
+                            <a class="nav-link" href="{{url('/')}}">BERANDA</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('rumah')}}">BANGUN RUMAH</a>
@@ -114,13 +114,13 @@
                                 Jasa Kami
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">Jasa Bangun Rumah</a>
+                                <a href="{{url('rumah')}}" class="text-reset text-decoration-none">Jasa Bangun Rumah</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Sewa Alat Pesta</a>
+                                <a href="{{url('wo')}}" class="text-reset text-decoration-none">Penyelenggara Pernikahan</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Gorden</a>
+                                <a href="{{url('gorden')}}" class="text-reset text-decoration-none">Pasang Gorden</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -146,7 +146,7 @@
             <!-- Copyright -->
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
                 © 2023 Copyright
-                <a class="text-reset fw-bold" href="#">sadean.com</a>
+                <a class="text-reset fw-bold text-decoration-none" href="#">sadean.com</a>
             </div>
             <!-- Copyright -->
         </footer>
