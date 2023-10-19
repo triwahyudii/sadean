@@ -10,7 +10,7 @@
                     <img src="{{ asset('storage/' . $item['images']) }}" class="card-img-top img-fluid" alt="...">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">{{$item['title']}}</h5>
+                    <h5 class="card-title text-center fw-bold">{{$item['title']}}</h5>
                     <div class="col text-center d-grid gap-2 col-6 mx-auto">
                         <a href="{{ url('rumah/' . $item['id']) }}" class="btn btn-warning justify-content-center">Rincian</a>
                     </div>

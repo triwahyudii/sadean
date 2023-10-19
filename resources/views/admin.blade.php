@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Multilink') }}</title>
+    <!-- <title>{{ config('app.name', 'Multilink') }}</title> -->
+    <title>Admin Sadean</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -16,6 +17,7 @@
 
     <link rel="stylesheet" href="{{ asset('/assets/css/main/app.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/css/main/app-dark.css') }}">
+    <link rel="icon" href="{{ asset('/img/logo/icon.png') }}" type="image/x-icon">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -28,7 +30,7 @@
                 <div class="sidebar-header position-relative">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <!-- <a href="#"><img src="{{ asset('/assets/images/logo/logo.svg') }}" alt="Logo" srcset=""></a> -->
+                            <!-- <a href="#"><img src="{{ asset('/img/logo/icon.png') }}" alt="Logo" srcset=""></a> -->
                             <h3>Sadean</h3>
                         </div>
                         <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
@@ -60,12 +62,12 @@
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
 
-                        <li class="sidebar-item active ">
+                        <!-- <li class="sidebar-item active ">
                             <a href="{{ url('/home/') }}" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
-                        </li>
+                        </li> -->
 
                         <!-- TRANSFER -->
                         <li class="sidebar-item">
