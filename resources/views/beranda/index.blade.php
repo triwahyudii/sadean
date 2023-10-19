@@ -84,7 +84,7 @@
                                 <p class="card-text">Lengkapi kebutuhan acara dengan peralatan yang lengkap.</p>
                                 <div class="row">
                                     <div class="col">
-                                        <a href="" class="btn btn-warning">Lihat Project</a>
+                                        <a href="{{url('/wedding')}}" class="btn btn-warning">Lihat Project</a>
                                     </div>
                                     <div class="col">
                                         <a href="https://wa.me/6285732003433?text=Halo,%20Saya%20ingin%20menyewa%20alat%20pesta" class="btn btn-primary">Hubungi Kami</a>

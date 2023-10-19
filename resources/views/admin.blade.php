@@ -77,7 +77,7 @@
 
                         <!-- TARIK TUNAI -->
                         <li class="sidebar-item">
-                            <a href="{{ url('/admin/wo') }}" class='sidebar-link'>
+                            <a href="{{ url('/admin/wedding') }}" class='sidebar-link'>
                                 <i class="fa-solid fa-champagne-glasses fs-4"></i>
                                 <span>Wedding</span>
                             </a>

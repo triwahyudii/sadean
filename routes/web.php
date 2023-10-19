@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GordenController;
 use App\Http\Controllers\RumahController;
+use App\Http\Controllers\WeddingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,7 +35,9 @@ Route::get('/admin/rumah/create', [RumahController::class, 'create']);
 Route::post('/admin/rumah/store', [RumahController::class, 'store']);
 
 //ADMIN WEDDING ORGANIZER
-
+Route::get('/admin/wedding', [WeddingController::class, 'index']);
+Route::get('/admin/wedding/create', [WeddingController::class, 'create']);
+Route::post('/admin/wedding/store', [WeddingController::class, 'store']);
 
 //USER GORDEN
 Route::get('gorden', [GordenController::class, 'listGorden']);
@@ -45,3 +48,8 @@ Route::get('gallery/gorden', [GordenController::class, 'gallery']);
 Route::get('rumah', [RumahController::class, 'listRumah']);
 Route::get('rumah/{id}', [RumahController::class, 'details']);
 Route::get('gallery/rumah', [RumahController::class, 'gallery']);
+
+//USER WEDDING ORGANIZER
+Route::get('wedding', [WeddingController::class, 'listWedding']);
+Route::get('wedding/{id}', [WeddingController::class, 'details']);
+Route::get('gallery/wedding', [WeddingController::class, 'gallery']);

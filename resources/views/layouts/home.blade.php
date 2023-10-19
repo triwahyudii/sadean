@@ -34,7 +34,7 @@
                             <a class="nav-link" href="{{url('rumah')}}">BANGUN RUMAH</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('wo')}}">WEDDING ORGANIZER</a>
+                            <a class="nav-link" href="{{url('wedding')}}">WEDDING ORGANIZER</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('gorden')}}">GORDEN</a>
@@ -46,7 +46,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item text-center" href="{{ url('gallery/rumah') }}">Bangun Rumah</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-center" href="{{ url('gallery/wo') }}">Wedding Organizer</a></li>
+                                <li><a class="dropdown-item text-center" href="{{ url('gallery/wedding') }}">Wedding Organizer</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-center" href="{{ url('gallery/gorden') }}">Gorden</a></li>
                             </ul>
