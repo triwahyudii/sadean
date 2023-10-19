@@ -33,6 +33,9 @@ Route::get('/admin/rumah', [RumahController::class, 'index']);
 Route::get('/admin/rumah/create', [RumahController::class, 'create']);
 Route::post('/admin/rumah/store', [RumahController::class, 'store']);
 
+//ADMIN WEDDING ORGANIZER
+
+
 //USER GORDEN
 Route::get('gorden', [GordenController::class, 'listGorden']);
 Route::get('gorden/{id}', [GordenController::class, 'details']);
