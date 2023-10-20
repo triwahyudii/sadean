@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Image;
 use App\Models\Wedding;
 use Illuminate\Http\Request;
 
@@ -38,7 +39,7 @@ class WeddingController extends Controller
 
         $file = $request->file('images');
         $fileName = uniqid() .  '.' . $file->getClientOriginalExtension();
-        $file->storeAs('public/', $fileName);
+        \Image::make($file)->save(public_path('/') . $fileName);
         $data['images'] = $fileName;
 
         Wedding::create($data);

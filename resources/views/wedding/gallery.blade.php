@@ -6,7 +6,7 @@
     @foreach($data as $item)
     <div class="col">
         <div>
-            <img src="{{ asset('storage/'.$item['images']) }}" class="img-fluid" alt="">
+            <img src="{{ asset('/'.$item['images']) }}" class="img-fluid" alt="">
         </div>
     </div>
     @endforeach

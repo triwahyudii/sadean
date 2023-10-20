@@ -7,7 +7,7 @@
         <div class="col">
             <div class="card border-0">
                 <div style="max-height: 250px; overflow: hidden;">
-                    <img src="{{ asset('storage/' . $item['images']) }}" class="card-img-top img-fluid" alt="...">
+                    <img src="{{ asset('/' . $item['images']) }}" class="card-img-top img-fluid" alt="...">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title text-center fw-bold">{{$item['title']}}</h5>

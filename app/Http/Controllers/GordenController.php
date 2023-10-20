@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Image;
 use App\Models\Gorden;
 use Illuminate\Http\Request;
 
@@ -38,7 +39,7 @@ class GordenController extends Controller
 
         $file = $request->file('images');
         $fileName = uniqid().  '.' . $file->getClientOriginalExtension();
-        $file->storeAs('public/', $fileName);
+        \Image::make($file)->save(public_path('/') . $fileName);
         $data['images'] = $fileName;
         
         Gorden::create($data);

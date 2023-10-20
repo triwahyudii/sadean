@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{ asset('/assets/css/main/app-dark.css') }}">
     <link rel="icon" href="{{ asset('/img/logo/icon.png') }}" type="image/x-icon">
 
+    <!-- script ckeditor5  -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -114,6 +117,14 @@
 
     <script src="https://kit.fontawesome.com/39d2ff4747.js" crossorigin="anonymous"></script>
     <script src="{{ asset('/assets/js/app.js') }}"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#desc'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
 </body>
 
 </html>

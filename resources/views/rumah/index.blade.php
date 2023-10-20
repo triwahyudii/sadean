@@ -34,7 +34,7 @@
                                 <td>Rp {{ number_format($item['price'], 0, ',', '.') }}</td>
                                 <td class="text-truncate" style="max-width: 150px;">{{ $item['desc'] }}</td>
                                 <td>
-                                    <img src="{{ asset('storage/'.$item['images']) }}" width="50px">
+                                    <img src="{{ asset('/'.$item['images']) }}" width="50px">
                                 </td>
                                 <td>
                                     <a href="{{ url('/admin/rumah/' . $item['id']) }}" class="btn btn-info btn-sm"><i class="fa-regular fa-eye"></i> View </a>

@@ -4,7 +4,7 @@
 <div class="container pt-5 pb-5">
     <div class="col">
         <div class="text-center">
-            <img src="{{ asset('storage/'.$data['images']) }}" class="img-fluid" alt="">
+            <img src="{{ asset('/'.$data['images']) }}" class="img-fluid" alt="">
         </div>
         <h3 class="fw-bold pt-3">{{ $data['title'] }}</h3>
         <h4 class="fw-bold pt-3 text-primary">Rp {{ number_format($data['price'], 0, ',', '.') }}</h4>

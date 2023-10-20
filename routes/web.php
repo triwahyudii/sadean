@@ -21,6 +21,13 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+// ln -s /home/wvgkhqqs/sadean-app/storage/app/public /home/wvgkhqqs/keyranet.com/storage
+
+// Route::get('/storage-link', function() {
+//     $targetFolder = base_path().'/storage/app/public';
+//     $linkFolder = $_SERVER['DOCUMENT_ROOT'].'/storage';
+//     symlink($targetFolder, $linkFolder);
+// });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
