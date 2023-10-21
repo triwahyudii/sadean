@@ -10,7 +10,7 @@
         <h4 class="fw-bold pt-3 text-primary">Rp {{ number_format($data['price'], 0, ',', '.') }}</h4>
         <div class="container">
             <h5 class="fw-bold pt-2">Rincian</h5>
-            <p>{{ $data['desc'] }}</p>
+            <p>{!! $data['desc'] !!}</p>
         </div>
         <div class="text-center">
             <h5>Konsultasi secara <span class="text-danger fw-bold">GRATIS !!</span></h5>

@@ -32,7 +32,7 @@
                             <tr>
                                 <td class="fw-bold">{{ $item['title'] }}</td>
                                 <td>Rp {{ number_format($item['price'], 0, ',', '.') }}</td>
-                                <td class="text-truncate" style="max-width: 150px;">{{ $item['desc'] }}</td>
+                                <td class="text-truncate" style="max-width: 150px;">{!! $item['desc'] !!}</td>
                                 <td>
                                     <img src="{{ asset('/'.$item['images']) }}" width="50px">
                                 </td>
