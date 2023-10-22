@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChopperController;
 use App\Http\Controllers\GordenController;
 use App\Http\Controllers\RumahController;
 use App\Http\Controllers\WeddingController;
@@ -39,6 +40,11 @@ Route::get('/admin/wedding', [WeddingController::class, 'index']);
 Route::get('/admin/wedding/create', [WeddingController::class, 'create']);
 Route::post('/admin/wedding/store', [WeddingController::class, 'store']);
 
+//ADMIN CHOPPER
+Route::get('/admin/chopper', [ChopperController::class, 'index']);
+Route::get('/admin/chopper/create', [ChopperController::class, 'create']);
+Route::post('/admin/chopper/store', [ChopperController::class, 'store']);
+
 //USER GORDEN
 Route::get('gorden', [GordenController::class, 'listGorden']);
 Route::get('gorden/{id}', [GordenController::class, 'details']);
@@ -53,3 +59,8 @@ Route::get('gallery/rumah', [RumahController::class, 'gallery']);
 Route::get('wedding', [WeddingController::class, 'listWedding']);
 Route::get('wedding/{id}', [WeddingController::class, 'details']);
 Route::get('gallery/wedding', [WeddingController::class, 'gallery']);
+
+//USER CHOPPER
+Route::get('chopper', [ChopperController::class, 'listChopper']);
+Route::get('chopper/{id}', [ChopperController::class, 'details']);
+Route::get('gallery/chopper', [ChopperController::class, 'gallery']);

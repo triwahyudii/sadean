@@ -40,6 +40,10 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+                                <li><a class="dropdown-item text-center fw-bold" href="{{ url('desain') }}">Desain Rumah</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item text-center  fw-bold" href="{{ url('wedding') }}">Wedding Organizer</a></li>
                             </ul>
                         </li>
@@ -75,11 +79,19 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+                                <li><a class="dropdown-item text-center" href="{{ url('gallery/desain') }}">Desain Rumah</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item text-center" href="{{ url('gallery/wedding') }}">Wedding Organizer</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item text-center" href="{{ url('gallery/gorden') }}">Gorden</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-center" href="{{ url('gallery/chopper') }}">Mesin Chopper</a></li>
                             </ul>
                         </li>
                     </ul>
