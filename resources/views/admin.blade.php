@@ -72,15 +72,23 @@
                             </a>
                         </li> -->
 
-                        <!-- TRANSFER -->
+                        <!-- BANGUN RUMAH  -->
                         <li class="sidebar-item">
                             <a href="{{ url('/admin/rumah') }}" class='sidebar-link'>
                                 <i class="fa-solid fa-house-user fs-4"></i>
-                                <span>Design Rumah</span>
+                                <span>Bangun Rumah</span>
                             </a>
                         </li>
 
-                        <!-- TARIK TUNAI -->
+                         <!-- DESAIN RUMAH  -->
+                         <li class="sidebar-item">
+                            <a href="{{ url('/admin/desain') }}" class='sidebar-link'>
+                                <i class="fa-solid fa-house-user fs-4"></i>
+                                <span>Desain Rumah</span>
+                            </a>
+                        </li>
+
+                        <!-- WEDDING -->
                         <li class="sidebar-item">
                             <a href="{{ url('/admin/wedding') }}" class='sidebar-link'>
                                 <i class="fa-solid fa-champagne-glasses fs-4"></i>
@@ -88,11 +96,19 @@
                             </a>
                         </li>
 
-                        <!-- SETOR TUNAI -->
+                        <!-- GORDEN -->
                         <li class="sidebar-item">
                             <a href="{{ url('/admin/gorden') }}" class='sidebar-link'>
                                 <i class="fa-brands fa-intercom fs-4"></i>
                                 <span>Gorden</span>
+                            </a>
+                        </li>
+
+                        <!-- CHOPPER -->
+                        <li class="sidebar-item">
+                            <a href="{{ url('/admin/chopper') }}" class='sidebar-link'>
+                                <i class="fa-brands fa-intercom fs-4"></i>
+                                <span>Mesin Chopper</span>
                             </a>
                         </li>
                     </ul>

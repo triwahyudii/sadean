@@ -31,7 +31,33 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/')}}">BERANDA</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                JASA KAMI
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-center fw-bold" href="{{ url('rumah') }}">Bangun Rumah</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-center  fw-bold" href="{{ url('wedding') }}">Wedding Organizer</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUK KAMI
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-center  fw-bold" href="{{ url('gorden') }}">Gorden</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-center  fw-bold" href="{{ url('chopper') }}">Mesin Chopper</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="{{url('rumah')}}">BANGUN RUMAH</a>
                         </li>
                         <li class="nav-item">
@@ -39,16 +65,20 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('gorden')}}">GORDEN</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 GALLERY
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item text-center" href="{{ url('gallery/rumah') }}">Bangun Rumah</a></li>
-                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item text-center" href="{{ url('gallery/wedding') }}">Wedding Organizer</a></li>
-                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item text-center" href="{{ url('gallery/gorden') }}">Gorden</a></li>
                             </ul>
                         </li>
@@ -109,20 +139,35 @@
                         <!-- Grid column -->
 
                         <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <div class="col-md-6 col-lg-6 col-xl-4 mx-auto mb-4">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Jasa Kami
-                            </h6>
-                            <p>
-                                <a href="{{url('rumah')}}" class="text-reset text-decoration-none">Jasa Bangun Rumah</a>
-                            </p>
-                            <p>
-                                <a href="{{url('wo')}}" class="text-reset text-decoration-none">Penyelenggara Pernikahan</a>
-                            </p>
-                            <p>
-                                <a href="{{url('gorden')}}" class="text-reset text-decoration-none">Pasang Gorden</a>
-                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Jasa Kami
+                                    </h6>
+                                    <p>
+                                        <a href="{{url('rumah')}}" class="text-reset text-decoration-none">Jasa Bangun Rumah</a>
+                                    </p>
+                                    <p>
+                                        <a href="{{url('desain')}}" class="text-reset text-decoration-none">Jasa Desain Rumah</a>
+                                    </p>
+                                    <p>
+                                        <a href="{{url('wedding')}}" class="text-reset text-decoration-none">Penyelenggara Pernikahan</a>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Produk Kami
+                                    </h6>
+                                    <p>
+                                        <a href="{{url('gorden')}}" class="text-reset text-decoration-none">Pasang Gorden</a>
+                                    </p>
+                                    <p>
+                                        <a href="{{url('chopper')}}" class="text-reset text-decoration-none">Mesin Chopper</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <!-- Grid column -->
 

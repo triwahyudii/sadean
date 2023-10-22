@@ -22,14 +22,31 @@
                 <div class="card h-100">
                     <img src="{{asset('/img/beranda/desain.jpg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Desain Rumah</h5>
+                        <h5 class="card-title fw-bold">Bangun Rumah</h5>
                         <p class="card-text">Bangun rumah impian dengan anggaran yang rendah.</p>
                         <div class="row">
                             <div class="col">
-                                <a href="" class="btn btn-warning">Lihat Project</a>
+                                <a href="{{url('/rumah')}}" class="btn btn-warning">Lihat Project</a>
                             </div>
                             <div class="col">
                                 <a href="https://wa.me/6285732003433?text=Halo,%20Saya%20ingin%20membangun%20rumah" class="btn btn-primary">Hubungi Kami</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{asset('/img/beranda/desain.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Desain Rumah</h5>
+                        <p class="card-text">Rancang rumah dengan teliti sesuai keinginan.</p>
+                        <div class="row">
+                            <div class="col">
+                                <a href="{{url('/desain')}}" class="btn btn-warning">Lihat Project</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://wa.me/6285732003433?text=Halo,%20Saya%20ingin%20desain%20rumah" class="btn btn-primary">Hubungi Kami</a>
                             </div>
                         </div>
                     </div>
@@ -60,10 +77,27 @@
                         <p class="card-text">Buat terkesan tamu dengan gorden yang mewah dan elegan.</p>
                         <div class="row">
                             <div class="col">
-                                <a href="{{url('/gorden')}}" class="btn btn-warning">Lihat Project</a>
+                                <a href="{{url('/gorden')}}" class="btn btn-warning">Lihat Produk</a>
                             </div>
                             <div class="col">
                                 <a href="https://wa.me/6285732003433?text=Halo,%20Saya%20ingin%20pesan%20gorden" class="btn btn-primary">Hubungi Kami</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{asset('/img/beranda/desain.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Mesin Chopper</h5>
+                        <p class="card-text">Hemat waktu dan hemat tenaga dengan mesin pemotong.</p>
+                        <div class="row">
+                            <div class="col">
+                                <a href="{{url('/chopper')}}" class="btn btn-warning">Lihat Produk</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://wa.me/6285732003433?text=Halo,%20Saya%20ingin%20pesan%20mesin%20pemotong" class="btn btn-primary">Hubungi Kami</a>
                             </div>
                         </div>
                     </div>

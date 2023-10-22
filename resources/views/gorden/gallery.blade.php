@@ -9,6 +9,7 @@
             <img src="{{ asset('/'.$item['images']) }}" class="img-fluid" alt="">
         </div>
     </div>
+    <br>
     @endforeach
 </div>
 @endsection
