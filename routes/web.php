@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChopperController;
+use App\Http\Controllers\DesainController;
 use App\Http\Controllers\GordenController;
 use App\Http\Controllers\RumahController;
 use App\Http\Controllers\WeddingController;
@@ -45,6 +46,11 @@ Route::get('/admin/chopper', [ChopperController::class, 'index']);
 Route::get('/admin/chopper/create', [ChopperController::class, 'create']);
 Route::post('/admin/chopper/store', [ChopperController::class, 'store']);
 
+//ADMIN DESAIN
+Route::get('/admin/desain', [DesainController::class, 'index']);
+Route::get('/admin/desain/create', [DesainController::class, 'create']);
+Route::post('/admin/desain/store', [DesainController::class, 'store']);
+
 //USER GORDEN
 Route::get('gorden', [GordenController::class, 'listGorden']);
 Route::get('gorden/{id}', [GordenController::class, 'details']);
@@ -64,3 +70,8 @@ Route::get('gallery/wedding', [WeddingController::class, 'gallery']);
 Route::get('chopper', [ChopperController::class, 'listChopper']);
 Route::get('chopper/{id}', [ChopperController::class, 'details']);
 Route::get('gallery/chopper', [ChopperController::class, 'gallery']);
+
+//USER DESAIN RUMAH
+Route::get('desain', [DesainController::class, 'listDesain']);
+Route::get('desain/{id}', [DesainController::class, 'details']);
+Route::get('gallery/desain', [DesainController::class, 'gallery']);

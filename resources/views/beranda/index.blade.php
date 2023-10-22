@@ -20,7 +20,7 @@
         <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
             <div class="col">
                 <div class="card h-100">
-                    <img src="{{asset('/img/beranda/desain.jpg')}}" class="card-img-top" alt="...">
+                    <img src="{{asset('/img/beranda/tukang.jpg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Bangun Rumah</h5>
                         <p class="card-text">Bangun rumah impian dengan anggaran yang rendah.</p>
@@ -71,7 +71,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="{{asset('/img/beranda/desain.jpg')}}" class="card-img-top" alt="...">
+                    <img src="{{asset('/img/beranda/gorden.jpg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Gorden</h5>
                         <p class="card-text">Buat terkesan tamu dengan gorden yang mewah dan elegan.</p>
@@ -88,7 +88,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="{{asset('/img/beranda/desain.jpg')}}" class="card-img-top" alt="...">
+                    <img src="{{asset('/img/beranda/chopper.png')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Mesin Chopper</h5>
                         <p class="card-text">Hemat waktu dan hemat tenaga dengan mesin pemotong.</p>
