@@ -80,10 +80,10 @@
                             </a>
                         </li>
 
-                         <!-- DESAIN RUMAH  -->
-                         <li class="sidebar-item">
+                        <!-- DESAIN RUMAH  -->
+                        <li class="sidebar-item">
                             <a href="{{ url('/admin/desain') }}" class='sidebar-link'>
-                                <i class="fa-solid fa-house-user fs-4"></i>
+                                <i class="fa-solid fa-compass-drafting"></i>
                                 <span>Desain Rumah</span>
                             </a>
                         </li>
@@ -107,7 +107,7 @@
                         <!-- CHOPPER -->
                         <li class="sidebar-item">
                             <a href="{{ url('/admin/chopper') }}" class='sidebar-link'>
-                                <i class="fa-brands fa-intercom fs-4"></i>
+                                <i class="fa-solid fa-fax"></i>
                                 <span>Mesin Chopper</span>
                             </a>
                         </li>

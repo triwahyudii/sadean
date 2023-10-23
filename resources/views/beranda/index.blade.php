@@ -54,10 +54,10 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="{{asset('/img/beranda/deal.jpg')}}" class="card-img-top" alt="...">
+                    <img src="{{asset('/img/beranda/wedding.jpg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Wedding Organizer</h5>
-                        <p class="card-text">Lengkapi kebutuhan acara dengan peralatan yang lengkap.</p>
+                        <p class="card-text">Abadikan moment untuk di kenang saat menua.</p>
                         <div class="row">
                             <div class="col">
                                 <a href="{{url('/wedding')}}" class="btn btn-warning">Lihat Project</a>
